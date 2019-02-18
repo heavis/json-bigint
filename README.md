@@ -1,8 +1,10 @@
-json-bigint
+json-bigint-x
 ===========
 
 [![Build Status](https://secure.travis-ci.org/sidorares/json-bigint.png)](http://travis-ci.org/sidorares/json-bigint)
 [![NPM](https://nodei.co/npm/json-bigint.png?downloads=true&stars=true)](https://nodei.co/npm/json-bigint/)
+
+Add ignoreDecimal option to ignore decimal number, it is used for Lonlat value.
 
 JSON.parse/stringify with bigints support. Based on Douglas Crockford [JSON.js](https://github.com/douglascrockford/JSON-js) package and [bignumber.js](https://github.com/MikeMcl/bignumber.js) library.
 
@@ -107,6 +109,8 @@ Default type: object, With option type: string
 
 ```
 
+#### options.ignoreDecimal, boolean, default false
+Sepcifies if Decimal type BigInts should be converted to BigNumber, for example, Lonlat number it shouldn't convet to BigNumber.
 
 ### Links:
 - [RFC4627: The application/json Media Type for JavaScript Object Notation (JSON)](http://www.ietf.org/rfc/rfc4627.txt)
